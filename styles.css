@@ -1,0 +1,68 @@
+/* General reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* CSS variables */ 
+
+:root {
+  /* Colors */
+--cyan-600: hsl(192, 37%, 48%);
+--cyan-300: hsl(192, 90%, 77%);
+--lighter-cyan-600: hsl(192, 54%, 64%);
+--purple-600: hsl(268, 34%, 53%);
+--purple-300: hsl(268, 100%,86%);
+--lighter-purple-600: hsl(268, 55%, 71%);
+--slate-900: hsl(240, 21%, 20%);
+--slate-600: hsl(240, 10%, 57%);
+--slate-300: hsl(240, 18%, 85%);
+--white: hsl(0, 0%, 98%);
+
+}
+
+
+/* Global styles */
+
+html {
+    font-size: 62.5% /* 1rem = 10px */
+}
+
+body {
+  font-family: var(--ff-red-hat-display);
+  font-size: 1.6rem;
+  line-height: 1.1;
+  letter-spacing: 0px;
+  min-height: 100vh;
+}
+
