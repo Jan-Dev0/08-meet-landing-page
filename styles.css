@@ -59,10 +59,57 @@ html {
 }
 
 body {
-  font-family: var(--ff-red-hat-display);
+  font-family: "Red Hat Display", sans-serif;
   font-size: 1.6rem;
   line-height: 1.1;
   letter-spacing: 0px;
   min-height: 100vh;
+  background-color: var(--white);
+  border: 3px solid red;
 }
 
+.container {
+  margin: 4.8rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid blue;
+  max-width: 37.5rem;
+}
+
+/* Header styles */ 
+.header {
+  margin-bottom: 6.4rem;
+}
+
+/* Hero styles */
+.hero {
+  margin-bottom: 3.2rem;
+}
+.hero__image-wrapper {
+  margin-bottom: 4.8rem;
+overflow: hidden;
+}
+
+.hero__image {
+}
+.hero__image-wrapper--left,
+.hero__image-wrapper--right {
+  display: none;
+}
+.hero__content {
+  margin: 0 3.2rem;
+}
+.hero__title {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--slate-900);
+  text-align: center;
+  padding: 1rem;
+}
+.hero__description {
+  text-align: center;
+  line-height: 1.5;
+  color: var(--slate-600);
+}
