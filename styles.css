@@ -65,45 +65,55 @@ body {
   letter-spacing: 0px;
   min-height: 100vh;
   background-color: var(--white);
-  border: 3px solid red;
 }
 
 .container {
   margin: 4.8rem auto 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   border: 3px solid blue;
-  max-width: 37.5rem;
+  min-width: 30rem;
+  width: 768px;
+
 }
 
 /* Header styles */ 
 .header {
   margin-bottom: 6.4rem;
+
+}
+
+.header__image {
+  margin: 0 auto;
 }
 
 /* Hero styles */
-.hero {
-  margin-bottom: 3.2rem;
-}
+
 .hero__image-wrapper {
   margin-bottom: 4.8rem;
-overflow: hidden;
+  margin: 3.2rem;
+  overflow: hidden;
+
 }
 
 .hero__image {
+  width: 150%;
 }
 .hero__image-wrapper--left,
 .hero__image-wrapper--right {
   display: none;
 }
 .hero__content {
-  margin: 0 3.2rem;
+  padding: 0 3.2rem 3.2rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
 }
 .hero__title {
   font-size: 4rem;
-  font-weight: 900;
+  font-weight: 800;
   color: var(--slate-900);
   text-align: center;
   padding: 1rem;
@@ -112,4 +122,172 @@ overflow: hidden;
   text-align: center;
   line-height: 1.5;
   color: var(--slate-600);
+}
+.hero__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+/* Button styles */
+.button {
+  font-weight: 800;
+  line-height: 1.5;
+  color: var(--white);
+  border: none;
+  border-radius: 2.9rem;
+  padding: 1.6rem 4rem;
+}
+.button--primary {
+  background-color: var(--cyan-600);
+}
+.button--primary:hover {
+  background-color: var(--lighter-cyan-600);
+}
+.button--secondary {
+  background-color: var(--purple-600);
+}
+.button--secondary:hover {
+  background-color: var(--lighter-purple-600);
+}
+
+.button--primary .button__version {
+  color: var(--cyan-300);
+}
+.button--secondary .button__version {
+  color: var(--purple-300);
+}
+
+
+.main-content {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+
+  gap: 6.4rem;
+}
+
+/* Feature styles */
+.feature {
+  margin: 0 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+
+.feature__index {
+  font-weight: 800;
+  line-height: 1.5;
+  color: var(--slate-600);
+  padding: 1.6rem;
+  margin: 0 auto;
+  margin-top: 8rem;
+  border: 1px solid var(--slate-300);
+  border-radius: 100%;
+  position: relative;
+}
+.feature__index::before {
+  content: "";
+  display: block;
+  width: 0.1rem;
+  height: 8rem;
+  border: transparent;
+  border-left: 0.1rem solid var(--slate-300);
+  position: absolute;
+  left: 50%;
+  top: -8rem;
+}
+
+.feature__images-wrapper {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+.feature__image {
+  width: calc(50% - 0.8rem);
+  border-radius: 0.8rem;
+}
+
+.feature__content-wrapper {
+  text-align: center;
+  padding-bottom: 3.2rem;
+}
+.feature__subheading {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.4rem;
+  color: var(--cyan-600);
+  margin-bottom: 1.6rem;
+}
+
+.feature__title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: var(--slate-900);
+  margin-bottom: 3.2rem;
+}
+
+.feature__description {
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--slate-600);
+}
+
+.feature-two {
+  gap: 0;
+  margin: 0;
+ 
+}
+
+.feature-two .feature__content-wrapper {
+  padding: 6.4rem 3.2rem;
+  background: 
+  linear-gradient(hsl(192 37% 48% / 0.8), hsl(192 37% 48% / 0.8)),
+  url(./assets/mobile/image-footer.jpg) center/cover no-repeat;
+}
+
+.feature-two .feature__title, 
+.feature-two .feature__description {
+  color: var(--white);
+  margin-bottom:  2.4rem;
+}
+
+.feature-two .feature__index {
+  background-color: var(--white);
+  margin-bottom: -2.5rem;
+}
+
+/* Responsive styles for tablet view */
+
+@media (min-width: 48rem) {
+  .hero__image-wrapper {
+    margin-bottom: 7.2rem;
+  }
+  .hero__content {
+    padding: 0 16rem 6.4rem 16rem;
+  }
+  .hero__button-wrapper {
+    flex-direction: row;
+  }
+  .main-content {
+    margin-top: 5.6rem;
+  }
+  .feature__image {
+    width: calc(25% - 1.8rem);
+  }
+  .feature__subheading {
+    font-size: 1.4rem;
+  }
+  .feature__title {
+    font-size: 3.6rem;
+  }
+.feature-two .feature__content-wrapper {
+  background: 
+  linear-gradient(hsl(192 37% 48% / 0.8), hsl(192 37% 48% / 0.8)),
+  url(./assets/tablet/image-footer.jpg) center/cover no-repeat;
+  padding: 6.4rem 13.2rem;
+}
 }
