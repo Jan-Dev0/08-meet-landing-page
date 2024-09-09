@@ -21,20 +21,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <div class="header__logo">
-          <img src="./assets/logo.svg" alt="Logo" class="header__image" />
-        </div>
-      </header>
-
       <section class="hero">
-        <div class="hero__image-wrapper">
-          <img
-            src="./assets/tablet/image-hero.png"
-            alt="Hero image"
-            class="hero__image"
-          />
-        </div>
         <div class="hero__image-wrapper hero__image-wrapper--left">
           <img
             src="./assets/desktop/image-hero-left.png"
@@ -44,17 +31,29 @@
         </div>
 
         <div class="hero__content">
+          <div class="hero__logo">
+            <img src="./assets/logo.svg" alt="Logo" class="header__image" />
+          </div>
+          <div class="hero__image-wrapper">
+            <img
+              src="./assets/tablet/image-hero.png"
+              alt="Hero image"
+              class="hero__image"
+            />
+          </div>
           <h1 class="hero__title">Group Chat for Everyone</h1>
           <p class="hero__description">
             Meet makes it easy to connect with others face-to-face virtually and
             collaborate across any device.
           </p>
           <div class="hero__button-wrapper">
-            <button class="button button--primary">Download <span class="button__version">v1.3</span</button>
+            <button class="button button--primary">
+              Download <span class="button__version">v1.3</span>
+            </button>
             <button class="button button--secondary">What is it?</button>
           </div>
         </div>
-        
+
         <div class="hero__image-wrapper hero__image-wrapper--right">
           <img
             src="./assets/desktop/image-hero-right.png"
@@ -65,7 +64,7 @@
       </section>
 
       <main class="main-content">
-        <section class="feature">
+        <section class="feature feature--one">
           <div class="feature__index">01</div>
           <div class="feature__images-wrapper">
             <img
@@ -98,18 +97,19 @@
               invite-only team access, data encryption, and data export.
             </p>
           </div>
-      
         </section>
 
-        <section class="feature feature-two">
+        <section class="feature feature--two">
           <div class="feature__index">02</div>
           <div class="feature__content-wrapper">
-          <h2 class="feature__title">Experience more together</h2>
-          <p class="feature__description">
-            Stay connected with reliable HD meetings and unlimited one-on-one
-            and group video sessions.
-          </p>
-          <button class="button button--secondary">Download <span class="button__version">v1.3</span></button>
+            <h2 class="feature__title">Experience more together</h2>
+            <p class="feature__description">
+              Stay connected with reliable HD meetings and unlimited one-on-one
+              and group video sessions.
+            </p>
+            <button class="button button--secondary">
+              Download <span class="button__version">v1.3</span>
+            </button>
           </div>
         </section>
       </main>
